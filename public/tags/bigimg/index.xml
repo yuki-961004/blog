@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bigimg on YuKi&#39;s Blog</title>
+    <link>https://username.github.io/tags/bigimg/</link>
+    <description>Recent content in bigimg on YuKi&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>hmz1969a@gmail.com (YuKi)</managingEditor>
+    <webMaster>hmz1969a@gmail.com (YuKi)</webMaster>
+    <lastBuildDate>Wed, 14 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://username.github.io/tags/bigimg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big Image Sample</title>
+      <link>https://username.github.io/post/2017-03-07-bigimg-sample/</link>
+      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>https://username.github.io/post/2017-03-07-bigimg-sample/</guid>
+      <description>我喜欢的姐姐们 Winona Instagram.
+Emma Instagram.
+JenniferInstagram.
+使用以下命令，可以替换顶部大图
+bigimg: - {src: &amp;#34;/img/triangle.jpg&amp;#34;, desc: &amp;#34;Triangle&amp;#34;} - {src: &amp;#34;/img/sphere.jpg&amp;#34;, desc: &amp;#34;Sphere&amp;#34;} - {src: &amp;#34;/img/hexagon.jpg&amp;#34;, desc: &amp;#34;Hexagon&amp;#34;} </description>
+    </item>
+    
+  </channel>
+</rss>

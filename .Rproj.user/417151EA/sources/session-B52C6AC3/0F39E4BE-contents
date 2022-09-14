@@ -1,0 +1,7 @@
+
+setwd("C:/Users/hmz19/Desktop/Mental Health/blog/beautifulhugo")
+library(blogdown)
+blogdown::serve_site()
+blogdown::serve_site()
+servr::browse_last()
+
