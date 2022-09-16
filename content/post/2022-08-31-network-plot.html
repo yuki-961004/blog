@@ -1,0 +1,211 @@
+---
+title: Network Plot
+author: ''
+date: '2022-08-31'
+slug: []
+categories: []
+tags:
+  - code
+  - plot
+  - R Markdown
+type: ''
+subtitle: ''
+image: ''
+---
+
+
+
+<p>这里的图是贴图<br />
+毕竟跑一次bootstrap就得5分钟</p>
+<pre><code>library(&quot;qgraph&quot;)
+library(&#39;ggplot2&#39;)
+library(&quot;bootnet&quot;) 
+library(&quot;dplyr&quot;)
+
+
+setwd(&quot;C:/Users/hmz19/Desktop/Mental Health/Network Plot/R_code&quot;)
+#import data
+net_prac&lt;- bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\Network Plot\\R_code\\dat_cfa_p.csv&quot;) %&gt;%
+  dplyr::select(.,TAS:HL) %&gt;%
+  dplyr::mutate(I=(I1+I2+I3+I4)/4,V=(V1+V2+V3)/3,Kp=Keep,Rl=Release,H_L=HL) %&gt;%
+  dplyr::select(.,I,V,Erp,Frp,HSrp,Rrp,Srp,Eeb,Feb,HSeb,Reb,Seb,Kp,Rl,H_L) %&gt;%
+  round(.,3) %&gt;%  #decimal=3
+  na.omit(.)  #delete missing data
+
+GGM &lt;- estimateNetwork(net_prac, default=&quot;EBICglasso&quot;) 
+
+#get named correlation matrix (EBICglasso)
+get_matrix &lt;- function(raw_matrix){
+  named_matrix &lt;- matrix(raw_matrix,nrow=15,ncol=15)
+  rownames(named_matrix) &lt;- c(&quot;I&quot;,&quot;V&quot;,&quot;Erp&quot;,&quot;Frp&quot;,&quot;HSrp&quot;,&quot;Rrp&quot;,&quot;Srp&quot;,&quot;Eeb&quot;,&quot;Feb&quot;,&quot;HSeb&quot;,&quot;Reb&quot;,&quot;Seb&quot;,&quot;Kp&quot;,&quot;Rl&quot;,&quot;H_L&quot;)
+  colnames(named_matrix) &lt;- c(&quot;I&quot;,&quot;V&quot;,&quot;Erp&quot;,&quot;Frp&quot;,&quot;HSrp&quot;,&quot;Rrp&quot;,&quot;Srp&quot;,&quot;Eeb&quot;,&quot;Feb&quot;,&quot;HSeb&quot;,&quot;Reb&quot;,&quot;Seb&quot;,&quot;Kp&quot;,&quot;Rl&quot;,&quot;H_L&quot;)
+return(named_matrix)
+}
+
+df &lt;- get_matrix(raw_matrix = GGM$graph)
+df
+#variables long name
+var_name &lt;- c(&quot;Impulsive&quot;,&quot;Venturesome&quot;,
+              &quot;Ethical Risk Perceptions&quot;,&quot;Financial Risk Perceptions&quot;,&quot;Health/Safety Risk Perceptions&quot;,&quot;Recreational Risk Perceptions&quot;,&quot;Social Risk Perceptions&quot;,
+              &quot;Ethical Expected Benefits &quot;,&quot;Financial Expected Benefits &quot;,&quot;Health/Safety Expected Benefits &quot;,&quot;Recreational Expected Benefits &quot;,&quot;Social Expected Benefits &quot;,
+              &quot;Keep&quot;,&quot;Release&quot;,&quot;Holt &amp; Laury&quot;)
+#create groups
+get_group &lt;- function(){
+  IV=c(1,2)
+  RP=c(3,4,5,6,7)
+  EB=c(8,9,10,11,12)
+  Y= c(13,14,15)
+
+  names(IV) &lt;- c(&quot;I&quot;,&quot;V&quot;)
+  names(RP) &lt;- c(&quot;Erp&quot;,&quot;Frp&quot;,&quot;HSrp&quot;,&quot;Rrp&quot;,&quot;Srp&quot;)
+  names(EB) &lt;- c(&quot;Eeb&quot;,&quot;Feb&quot;,&quot;HSeb&quot;,&quot;Reb&quot;,&quot;Seb&quot;)
+  names(Y) &lt;- c(&quot;Kp&quot;,&quot;Rl&quot;,&quot;H_L&quot;)
+
+  group=list(IV,RP,EB,Y)
+  names(group) &lt;- c(&quot;IV&quot;,&quot;RP&quot;,&quot;EB&quot;,&quot;Y&quot;)
+return(group)
+}
+
+risk_group=get_group()
+risk_group
+
+
+library(&#39;mgm&#39;)
+#get pie(residual error)
+get_RE &lt;- function(raw_data){
+  p &lt;- ncol(raw_data) #number of variables
+  
+  fit_obj &lt;- mgm(data = raw_data, 
+                 type = rep(&#39;g&#39;, p), #&quot;g&quot; for Gaussian, &quot;p&quot; for Poisson, &quot;c&quot; for categorical.
+                 lev = rep(1, p), #continue variable default setting
+                 rule.reg = &#39;OR&#39;)
+  pred_obj &lt;- predict(fit_obj, raw_data, 
+                      error.continuous = &#39;VarExpl&#39;) #fit_obj + data = pred_obj
+return(pred_obj$error)
+}
+
+RE &lt;- get_RE(raw_data=net_prac)
+RE
+RE$RMSE
+
+#color
+library(&#39;viridisLite&#39;)
+library(&#39;viridis&#39;)
+pal_rb&lt;- viridis(4,option = &quot;H&quot;)
+
+#network plot
+c1 &lt;- qgraph (df,layout = &quot;groups&quot;,groups=risk_group, 
+              posCol = &quot;lightgreen&quot;, negCol = &quot;pink&quot;, #positive &amp; negative line color
+              directed = FALSE,esize = 15, #esize: max edge size                
+              edge.width = 0.8, edge.labels = F,            
+              nodeNames=var_name, #variable names in legend 
+              border.color = &quot;grey&quot;,border.width = 0.5, #node border color and size
+              color = pal_rb, #group color
+              label.color = &quot;white&quot;, #label color in graph
+              pie = RE$RMSE, pieBorder = 0.25, #residual error
+              label.cex=2, legend.cex=0.3, GLratio = 1,#graph &amp; legend relative size
+              node.width=0.8,node.height=0.8) 
+
+
+#centrality
+c2 &lt;- qgraph::centralityPlot(GGM, 
+      include=c(&quot;Strength&quot;,&quot;Betweenness&quot;,&quot;Closeness&quot;,&quot;ExpectedInfluence&quot;),
+      orderBy = &quot;Strength&quot;) 
+
+#centrality stability
+c3 &lt;- bootnet(GGM, statistics = c(&quot;Strength&quot;,&quot;Betweenness&quot;,&quot;Closeness&quot;,&quot;ExpectedInfluence&quot;), 
+              nBoots = 1000, nCores = 16,type = &quot;case&quot;) 
+plot(c3,statistics = c(&quot;Strength&quot;,&quot;Betweenness&quot;,&quot;Closeness&quot;,&quot;ExpectedInfluence&quot;)) + 
+              theme()
+
+#bootstrap mean
+library(&#39;relaimpo&#39;)
+GGM_A &lt;- estimateNetwork(net_prac, default = &quot;relimp&quot;,normalize = FALSE, nCores = 16) 
+c4 &lt;- bootnet(GGM_A, nBoots = 100, nCores = 16)
+plot(c4, plot = &quot;interval&quot;, split0 = TRUE, order=&quot;sample&quot;, labels=FALSE)
+
+#bridge centrality
+library(&#39;networktools&#39;)
+c5 &lt;- bridge(c1,communities = c(&#39;1&#39;,&#39;1&#39;,&#39;2&#39;,&#39;2&#39;,&#39;2&#39;,&#39;2&#39;,&#39;2&#39;,&#39;3&#39;,&#39;3&#39;,&#39;3&#39;,&#39;3&#39;,&#39;3&#39;,&#39;4&#39;,&#39;4&#39;,&#39;4&#39;),
+  useCommunities = &quot;all&quot;,directed = NULL,
+  nodes = NULL,normalize = FALSE)
+plot(c5)
+
+#Bootstrapped dierence tests
+c6 &lt;- bootnet(GGM, nBoots = 1000, nCores = 16)
+plot(c6, &quot;edge&quot;, plot = &quot;difference&quot;, onlyNonZero = TRUE, order = &quot;sample&quot;)
+plot(c6,&quot;strength&quot;)
+
+#Network comparisons
+net_comp&lt;- bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\Network Plot\\R_code\\dat_cfa_p.csv&quot;) %&gt;%
+  dplyr::select(.,gender,TAS:HL) %&gt;%
+  dplyr::mutate(I=(I1+I2+I3+I4)/4,V=(V1+V2+V3)/3,Kp=Keep,Rl=Release,H_L=HL,
+                gender =as.numeric(ifelse(gender==&#39;male&#39;,&quot;1&quot;,&quot;2&quot;))) %&gt;%
+  round(.,3) %&gt;%  #decimal=3
+  dplyr::select(.,gender,I,V,Erp,Frp,HSrp,Rrp,Srp,Eeb,Feb,HSeb,Reb,Seb,Kp,Rl,H_L) %&gt;%
+  na.omit(.)  #delete missing data
+
+#Network centrality comparisons
+net_m &lt;- dplyr::filter(net_comp,gender==1) %&gt;%
+         dplyr::select(.,-gender) %&gt;%
+         estimateNetwork(., default=&quot;EBICglasso&quot;)
+net_f &lt;- dplyr::filter(net_comp,gender==2) %&gt;%
+         dplyr::select(.,-gender) %&gt;%
+         estimateNetwork(., default=&quot;EBICglasso&quot;) 
+
+c7 &lt;- qgraph::centralityPlot(list(male=net_m,
+                                  female=net_f), 
+      include=c(&quot;Strength&quot;,&quot;Betweenness&quot;,&quot;Closeness&quot;,&quot;ExpectedInfluence&quot;),
+      orderBy = &quot;Strength&quot;) 
+
+#Network edge comparisons
+#Network plot (draw 2 graph for each group)
+library(&#39;mgm&#39;)
+mgm_obj &lt;- mgm(data = net_comp, 
+               type = c(&quot;c&quot;, 
+                        &quot;g&quot;, &quot;g&quot;, 
+                        &quot;g&quot;, &quot;g&quot;, &quot;g&quot;,&quot;g&quot;, &quot;g&quot;, 
+                        &quot;g&quot;, &quot;g&quot;, &quot;g&quot;,&quot;g&quot;, &quot;g&quot;, 
+                        &quot;g&quot;, &quot;g&quot;, &quot;g&quot;), #variable type c: categorical g: Gaussian(continual)
+               level = c(2,
+                         1,1,
+                         1,1,1,1,1,
+                         1,1,1,1,1,
+                         1,1,1), #categorical variable level, &#39;1&#39; for continual variables 
+               moderators = 1, #row of moderator(categorical variable)
+               lambdaSel = &quot;EBIC&quot;, 
+               lambdaGam = 0.25, 
+               ruleReg = &quot;AND&quot;, 
+               pbar = FALSE)
+
+
+comp_plot &lt;- function(comp_data,n_group){
+  l_mgm_cond &lt;- list()
+  for(g in 1:n_group) l_mgm_cond[[g]] &lt;- condition(object = comp_data, #for... fill categorical variable(moderator)&#39;s level
+                                           values = list(&quot;1&quot; = g)) #list()... fill the row of moderator
+
+  v_max &lt;- rep(NA, n_group)
+  for(g in 1:n_group) v_max[g] &lt;- max(l_mgm_cond[[g]]$pairwise$wadj) #the same as above
+
+  par(mfrow=c(1, n_group)) 
+  comp_graph &lt;- for(g in 1:n_group) { #categorical variable level (the value must to be same as the raw data)
+    qgraph(input = l_mgm_cond[[g]]$pairwise$wadj, 
+         edge.color = l_mgm_cond[[g]]$pairwise$edgecolor_cb,
+         lty = l_mgm_cond[[g]]$pairwise$edge_lty,
+         layout = &quot;circle&quot;, mar = c(2, 3, 5, 3),
+         maximum = max(v_max), vsize = 5, esize = 10, #vsize = node size; esize = edge size
+         edge.labels  = TRUE, edge.label.cex = 3)
+    mtext(text = paste0(&quot;Group &quot;, g), line = 2.5)
+}
+return(comp_graph)
+}
+
+comp_plot(comp_data = mgm_obj, n_group=2)
+
+#Network moderator effect
+res_obj &lt;- mgm::resample(object = mgm_obj, 
+                    data = net_comp, 
+                    nB = 50, 
+                    pbar = FALSE)
+plotRes(res_obj)</code></pre>
+<p><img src="/post/2022-08-31-network-plot_files/network_plot_with%20pie.png" /></p>
