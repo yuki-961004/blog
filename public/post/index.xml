@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on YuKi&#39;s Blog</title>
-    <link>/post/</link>
+    <link>https://yukis-blog.netlify.app/post/</link>
     <description>Recent content in Posts on YuKi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hmz1969a@gmail.com (YuKi)</managingEditor>
     <webMaster>hmz1969a@gmail.com (YuKi)</webMaster>
-    <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukis-blog.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code joke</title>
-      <link>/post/2022-09-16-code-joke/</link>
+      <link>https://yukis-blog.netlify.app/post/2022-09-16-code-joke/</link>
       <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2022-09-16-code-joke/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2022-09-16-code-joke/</guid>
       <description>哈哈哈</description>
     </item>
     
     <item>
       <title>matrixA_function</title>
-      <link>/post/2022-09-14-plot/</link>
+      <link>https://yukis-blog.netlify.app/post/2022-09-14-plot/</link>
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2022-09-14-plot/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2022-09-14-plot/</guid>
       <description>这里的图是通过代码跑出来的，不是贴图
 ###############################library packages##############################base#install.packages(&amp;#39;tidyverse&amp;#39;)#install.packages(&amp;#39;bruceR&amp;#39;)library(&amp;#39;tidyverse&amp;#39;)library(&amp;#39;bruceR&amp;#39;)#plot#install.packages(&amp;#39;ggplot2&amp;#39;)library(&amp;#39;ggplot2&amp;#39;)#color#install.packages(&amp;#39;viridisLite&amp;#39;)#install.packages(&amp;#39;viridis&amp;#39;)library(&amp;#39;viridisLite&amp;#39;)library(&amp;#39;viridis&amp;#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&amp;#39;showtext&amp;#39;)#install.packages(&amp;#39;Cairo&amp;#39;)#install.packages(&amp;#39;sysfonts&amp;#39;)#install.packages(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;sysfonts&amp;#39;)library(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;showtext&amp;#39;)library(&amp;#39;Cairo&amp;#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&amp;quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&amp;quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.</description>
     </item>
     
     <item>
       <title>Big Image Sample</title>
-      <link>/post/2017-03-07-bigimg-sample/</link>
+      <link>https://yukis-blog.netlify.app/post/2017-03-07-bigimg-sample/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2017-03-07-bigimg-sample/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2017-03-07-bigimg-sample/</guid>
       <description>Samples Winona Instagram.
 Emma Instagram.
 JenniferInstagram.
@@ -42,10 +42,10 @@ bigimg: - {src: &amp;#34;/img/triangle.jpg&amp;#34;, desc: &amp;#34;Triangle&amp
     
     <item>
       <title>Math Sample</title>
-      <link>/post/2017-03-05-math-sample/</link>
+      <link>https://yukis-blog.netlify.app/post/2017-03-05-math-sample/</link>
       <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2017-03-05-math-sample/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2017-03-05-math-sample/</guid>
       <description>&lt;h3 id=&#34;my-favorite-function&#34;&gt;My Favorite Function&lt;/h3&gt;
 &lt;p&gt;$$
 E=mc^{2}
@@ -55,10 +55,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Network Plot</title>
-      <link>/post/2022-08-31-network-plot/</link>
+      <link>https://yukis-blog.netlify.app/post/2022-08-31-network-plot/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2022-08-31-network-plot/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2022-08-31-network-plot/</guid>
       <description>这里的图是贴图
 毕竟跑一次bootstrap就得5分钟
 library(&amp;quot;qgraph&amp;quot;)library(&amp;#39;ggplot2&amp;#39;)library(&amp;quot;bootnet&amp;quot;) library(&amp;quot;dplyr&amp;quot;)setwd(&amp;quot;C:/Users/hmz19/Desktop/Mental Health/Network Plot/R_code&amp;quot;)#import datanet_prac&amp;lt;- bruceR::import(&amp;quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\Network Plot\\R_code\\dat_cfa_p.csv&amp;quot;) %&amp;gt;%dplyr::select(.,TAS:HL) %&amp;gt;%dplyr::mutate(I=(I1+I2+I3+I4)/4,V=(V1+V2+V3)/3,Kp=Keep,Rl=Release,H_L=HL) %&amp;gt;%dplyr::select(.,I,V,Erp,Frp,HSrp,Rrp,Srp,Eeb,Feb,HSeb,Reb,Seb,Kp,Rl,H_L) %&amp;gt;%round(.,3) %&amp;gt;% #decimal=3na.omit(.) #delete missing dataGGM &amp;lt;- estimateNetwork(net_prac, default=&amp;quot;EBICglasso&amp;quot;) #get named correlation matrix (EBICglasso)get_matrix &amp;lt;- function(raw_matrix){named_matrix &amp;lt;- matrix(raw_matrix,nrow=15,ncol=15)rownames(named_matrix) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;,&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;,&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)colnames(named_matrix) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;,&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;,&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)return(named_matrix)}df &amp;lt;- get_matrix(raw_matrix = GGM$graph)df#variables long namevar_name &amp;lt;- c(&amp;quot;Impulsive&amp;quot;,&amp;quot;Venturesome&amp;quot;,&amp;quot;Ethical Risk Perceptions&amp;quot;,&amp;quot;Financial Risk Perceptions&amp;quot;,&amp;quot;Health/Safety Risk Perceptions&amp;quot;,&amp;quot;Recreational Risk Perceptions&amp;quot;,&amp;quot;Social Risk Perceptions&amp;quot;,&amp;quot;Ethical Expected Benefits &amp;quot;,&amp;quot;Financial Expected Benefits &amp;quot;,&amp;quot;Health/Safety Expected Benefits &amp;quot;,&amp;quot;Recreational Expected Benefits &amp;quot;,&amp;quot;Social Expected Benefits &amp;quot;,&amp;quot;Keep&amp;quot;,&amp;quot;Release&amp;quot;,&amp;quot;Holt &amp;amp; Laury&amp;quot;)#create groupsget_group &amp;lt;- function(){IV=c(1,2)RP=c(3,4,5,6,7)EB=c(8,9,10,11,12)Y= c(13,14,15)names(IV) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;)names(RP) &amp;lt;- c(&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;)names(EB) &amp;lt;- c(&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;)names(Y) &amp;lt;- c(&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)group=list(IV,RP,EB,Y)names(group) &amp;lt;- c(&amp;quot;IV&amp;quot;,&amp;quot;RP&amp;quot;,&amp;quot;EB&amp;quot;,&amp;quot;Y&amp;quot;)return(group)}risk_group=get_group()risk_grouplibrary(&amp;#39;mgm&amp;#39;)#get pie(residual error)get_RE &amp;lt;- function(raw_data){p &amp;lt;- ncol(raw_data) #number of variablesfit_obj &amp;lt;- mgm(data = raw_data, type = rep(&amp;#39;g&amp;#39;, p), #&amp;quot;g&amp;quot; for Gaussian, &amp;quot;p&amp;quot; for Poisson, &amp;quot;c&amp;quot; for categorical.</description>
@@ -66,37 +66,37 @@ library(&amp;quot;qgraph&amp;quot;)library(&amp;#39;ggplot2&amp;#39;)library(&
     
     <item>
       <title>Trident Z</title>
-      <link>/post/2022-07-07-trident-z/</link>
+      <link>https://yukis-blog.netlify.app/post/2022-07-07-trident-z/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2022-07-07-trident-z/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2022-07-07-trident-z/</guid>
       <description>电脑清灰</description>
     </item>
     
     <item>
       <title>仿佛是火山</title>
-      <link>/post/2022-01-22-volcano/</link>
+      <link>https://yukis-blog.netlify.app/post/2022-01-22-volcano/</link>
       <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2022-01-22-volcano/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2022-01-22-volcano/</guid>
       <description>江边对岸的山装了灯 这年头，连山也是RGB的</description>
     </item>
     
     <item>
       <title>goden_dove</title>
-      <link>/post/2021-04-17-goden-dove/</link>
+      <link>https://yukis-blog.netlify.app/post/2021-04-17-goden-dove/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2021-04-17-goden-dove/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2021-04-17-goden-dove/</guid>
       <description>这张图每一个像素点都是黄金分鸽</description>
     </item>
     
     <item>
       <title>Hello R Markdown</title>
-      <link>/post/2020-12-01-r-rmarkdown/</link>
+      <link>https://yukis-blog.netlify.app/post/2020-12-01-r-rmarkdown/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2020-12-01-r-rmarkdown/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2020-12-01-r-rmarkdown/</guid>
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
@@ -104,10 +104,10 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
     <item>
       <title>night</title>
-      <link>/post/2020-09-01-night/</link>
+      <link>https://yukis-blog.netlify.app/post/2020-09-01-night/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2020-09-01-night/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2020-09-01-night/</guid>
       <description>20年的一天晚上
 应该是刚看完小妇人回家
 Emma的演技确实糟糕
@@ -116,10 +116,10 @@ Emma的演技确实糟糕
     
     <item>
       <title>Photoswipe Gallery Sample</title>
-      <link>/post/2017-03-20-photoswipe-gallery-sample/</link>
+      <link>https://yukis-blog.netlify.app/post/2017-03-20-photoswipe-gallery-sample/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2017-03-20-photoswipe-gallery-sample/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2017-03-20-photoswipe-gallery-sample/</guid>
       <description>&lt;p&gt;Beautiful Hugo adds a few custom shortcodes created by &lt;a href=&#34;https://www.liwen.id.au/heg/&#34;&gt;Li-Wen Yip&lt;/a&gt; and &lt;a href=&#34;https://github.com/GjjvdBurg/HugoPhotoSwipe&#34;&gt;Gert-Jan van den Berg&lt;/a&gt; for making galleries with &lt;a href=&#34;http://photoswipe.com&#34;&gt;PhotoSwipe&lt;/a&gt; .&lt;/p&gt;
 
 
@@ -127,13 +127,13 @@ Emma的演技确实糟糕
 &lt;div class=&#34;gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
 	  
   
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;/css/hugo-easy-gallery.css&#34; /&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://yukis-blog.netlify.app/css/hugo-easy-gallery.css&#34; /&gt;
   &lt;div class=&#34;box&#34; &gt;
     &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;//img/hexagon-thumb.jpg&#39;);&#34;&gt;
-        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/hexagon-thumb.jpg&#34; alt=&#34;/img/hexagon-thumb.jpg&#34;/&gt;
+      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://yukis-blog.netlify.app/img/hexagon-thumb.jpg&#39;);&#34;&gt;
+        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://yukis-blog.netlify.app/img/hexagon-thumb.jpg&#34; alt=&#34;/img/hexagon-thumb.jpg&#34;/&gt;
       &lt;/div&gt;
-      &lt;a href=&#34;/img/hexagon.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;a href=&#34;https://yukis-blog.netlify.app/img/hexagon.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
     &lt;/figure&gt;
   &lt;/div&gt;
 
@@ -141,10 +141,10 @@ Emma的演技确实糟糕
   
   &lt;div class=&#34;box&#34; &gt;
     &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;//img/sphere-thumb.jpg&#39;);&#34;&gt;
-        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/sphere-thumb.jpg&#34; alt=&#34;Sphere&#34;/&gt;
+      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://yukis-blog.netlify.app/img/sphere-thumb.jpg&#39;);&#34;&gt;
+        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://yukis-blog.netlify.app/img/sphere-thumb.jpg&#34; alt=&#34;Sphere&#34;/&gt;
       &lt;/div&gt;
-      &lt;a href=&#34;/img/sphere.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;a href=&#34;https://yukis-blog.netlify.app/img/sphere.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
         &lt;figcaption&gt;
             &lt;p&gt;Sphere&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -155,10 +155,10 @@ Emma的演技确实糟糕
   
   &lt;div class=&#34;box&#34; &gt;
     &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;//img/triangle-thumb.jpg&#39;);&#34;&gt;
-        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/triangle-thumb.jpg&#34; alt=&#34;This is a long comment about a triangle&#34;/&gt;
+      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://yukis-blog.netlify.app/img/triangle-thumb.jpg&#39;);&#34;&gt;
+        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://yukis-blog.netlify.app/img/triangle-thumb.jpg&#34; alt=&#34;This is a long comment about a triangle&#34;/&gt;
       &lt;/div&gt;
-      &lt;a href=&#34;/img/triangle.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;a href=&#34;https://yukis-blog.netlify.app/img/triangle.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
         &lt;figcaption&gt;
             &lt;p&gt;Triangle&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -169,10 +169,10 @@ Emma的演技确实糟糕
   
   &lt;div class=&#34;box&#34; &gt;
     &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;//img/jc1-small.jpg&#39;);&#34;&gt;
-        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;/img/jc1-small.jpg&#34; alt=&#34;Jennifer Connelly.......&#34;/&gt;
+      &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://yukis-blog.netlify.app/img/jc1-small.jpg&#39;);&#34;&gt;
+        &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://yukis-blog.netlify.app/img/jc1-small.jpg&#34; alt=&#34;Jennifer Connelly.......&#34;/&gt;
       &lt;/div&gt;
-      &lt;a href=&#34;/img/jc1.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;a href=&#34;https://yukis-blog.netlify.app/img/jc1.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
         &lt;figcaption&gt;
             &lt;p&gt;Jennifer Connelly&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -185,28 +185,28 @@ Emma的演技确实糟糕
     
     <item>
       <title>Code Sample</title>
-      <link>/post/2016-03-08-code-sample/</link>
+      <link>https://yukis-blog.netlify.app/post/2016-03-08-code-sample/</link>
       <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2016-03-08-code-sample/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2016-03-08-code-sample/</guid>
       <description>&lt;p&gt;The following are two code samples using syntax highlighting.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Flake it till you make it</title>
-      <link>/post/2015-02-26-flake-it-till-you-make-it/</link>
+      <link>https://yukis-blog.netlify.app/post/2015-02-26-flake-it-till-you-make-it/</link>
       <pubDate>Thu, 26 Feb 2015 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2015-02-26-flake-it-till-you-make-it/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2015-02-26-flake-it-till-you-make-it/</guid>
       <description>Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?</description>
     </item>
     
     <item>
       <title>Test markdown</title>
-      <link>/post/2015-02-20-test-markdown/</link>
+      <link>https://yukis-blog.netlify.app/post/2015-02-20-test-markdown/</link>
       <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2015-02-20-test-markdown/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2015-02-20-test-markdown/</guid>
       <description>You can write regular markdown here and Hugo will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it&amp;rsquo;ll teach you how to transform regular text into bold/italics/headings/tables/etc.
 Here is some bold text
 Here is a secondary heading Here&amp;rsquo;s a useless table:
@@ -215,47 +215,47 @@ Number Next number Previous number Five Six Four Ten Eleven Nine Seven Eight Six
     
     <item>
       <title>To be</title>
-      <link>/post/2015-02-13-hamlet-monologue/</link>
+      <link>https://yukis-blog.netlify.app/post/2015-02-13-hamlet-monologue/</link>
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2015-02-13-hamlet-monologue/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2015-02-13-hamlet-monologue/</guid>
       <description>To be, or not to be&amp;ndash;that is the question: Whether &amp;rsquo;tis nobler in the mind to suffer The slings and arrows of outrageous fortune Or to take arms against a sea of troubles And by opposing end them. To die, to sleep&amp;ndash; No more&amp;ndash;and by a sleep to say we end The heartache, and the thousand natural shocks That flesh is heir to. &amp;lsquo;Tis a consummation Devoutly to be wished. To die, to sleep&amp;ndash; To sleep&amp;ndash;perchance to dream: ay, there&amp;rsquo;s the rub, For in that sleep of death what dreams may come When we have shuffled off this mortal coil, Must give us pause.</description>
     </item>
     
     <item>
       <title>Dear diary</title>
-      <link>/post/2015-01-27-dear-diary/</link>
+      <link>https://yukis-blog.netlify.app/post/2015-01-27-dear-diary/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2015-01-27-dear-diary/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2015-01-27-dear-diary/</guid>
       <description>What is it with that Mary girl? Dragging me to school every day. As if I had a choice. What you don&amp;rsquo;t hear in those nursery rhymes is that she starves me if I don&amp;rsquo;t go to school with her; it&amp;rsquo;s the only way I can stay alive! I&amp;rsquo;m thinking about being adopted by Little Bo Peep, sure I may get lost, but anything is better than being with Mary and those little brats at school (shudder, shudder).</description>
     </item>
     
     <item>
       <title>Soccer</title>
-      <link>/post/2015-01-19-soccer/</link>
+      <link>https://yukis-blog.netlify.app/post/2015-01-19-soccer/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2015-01-19-soccer/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2015-01-19-soccer/</guid>
       <description>From Wikipedia:
 Association football, more commonly known as football or soccer,[2] is a sport played between two teams of eleven players with a spherical ball. It is played by 250 million players in over 200 countries, making it the world&amp;rsquo;s most popular sport.[3][4][5][6] The game is played on a rectangular field with a goal at each end. The object of the game is to score by getting the ball into the opposing goal.</description>
     </item>
     
     <item>
       <title>Pirates arrrr</title>
-      <link>/post/2015-01-15-pirates/</link>
+      <link>https://yukis-blog.netlify.app/post/2015-01-15-pirates/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2015-01-15-pirates/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2015-01-15-pirates/</guid>
       <description>Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water or on a shore. It does not normally include crimes committed against persons traveling on the same vessel as the perpetrator (e.g. one passenger stealing from others on the same vessel). The term has been used throughout history to refer to raids across land borders by non-state agents.</description>
     </item>
     
     <item>
       <title>First post!</title>
-      <link>/post/2015-01-04-first-post/</link>
+      <link>https://yukis-blog.netlify.app/post/2015-01-04-first-post/</link>
       <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>/post/2015-01-04-first-post/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2015-01-04-first-post/</guid>
       <description>This is my first post, how exciting!</description>
     </item>
     

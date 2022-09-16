@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: https://yukis-blog.netlify.app
 DefaultContentLanguage: en
 title: YuKi's Blog
 theme: beautifulhugo
