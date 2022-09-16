@@ -14,7 +14,8 @@
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
       <guid>/post/2022-09-14-plot/</guid>
-      <description>###############################library packages##############################base#install.packages(&amp;#39;tidyverse&amp;#39;)#install.packages(&amp;#39;bruceR&amp;#39;)library(&amp;#39;tidyverse&amp;#39;)library(&amp;#39;bruceR&amp;#39;)#plot#install.packages(&amp;#39;ggplot2&amp;#39;)library(&amp;#39;ggplot2&amp;#39;)#color#install.packages(&amp;#39;viridisLite&amp;#39;)#install.packages(&amp;#39;viridis&amp;#39;)library(&amp;#39;viridisLite&amp;#39;)library(&amp;#39;viridis&amp;#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&amp;#39;showtext&amp;#39;)#install.packages(&amp;#39;Cairo&amp;#39;)#install.packages(&amp;#39;sysfonts&amp;#39;)#install.packages(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;sysfonts&amp;#39;)library(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;showtext&amp;#39;)library(&amp;#39;Cairo&amp;#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&amp;quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&amp;quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.</description>
+      <description>这里的图是通过代码跑出来的，不是贴图
+###############################library packages##############################base#install.packages(&amp;#39;tidyverse&amp;#39;)#install.packages(&amp;#39;bruceR&amp;#39;)library(&amp;#39;tidyverse&amp;#39;)library(&amp;#39;bruceR&amp;#39;)#plot#install.packages(&amp;#39;ggplot2&amp;#39;)library(&amp;#39;ggplot2&amp;#39;)#color#install.packages(&amp;#39;viridisLite&amp;#39;)#install.packages(&amp;#39;viridis&amp;#39;)library(&amp;#39;viridisLite&amp;#39;)library(&amp;#39;viridis&amp;#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&amp;#39;showtext&amp;#39;)#install.packages(&amp;#39;Cairo&amp;#39;)#install.packages(&amp;#39;sysfonts&amp;#39;)#install.packages(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;sysfonts&amp;#39;)library(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;showtext&amp;#39;)library(&amp;#39;Cairo&amp;#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&amp;quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&amp;quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.</description>
     </item>
     
     <item>
@@ -44,6 +45,44 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Network Plot</title>
+      <link>/post/2022-08-31-network-plot/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>/post/2022-08-31-network-plot/</guid>
+      <description>这里的图是贴图
+毕竟跑一次bootstrap就得5分钟
+library(&amp;quot;qgraph&amp;quot;)library(&amp;#39;ggplot2&amp;#39;)library(&amp;quot;bootnet&amp;quot;) library(&amp;quot;dplyr&amp;quot;)setwd(&amp;quot;C:/Users/hmz19/Desktop/Mental Health/Network Plot/R_code&amp;quot;)#import datanet_prac&amp;lt;- bruceR::import(&amp;quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\Network Plot\\R_code\\dat_cfa_p.csv&amp;quot;) %&amp;gt;%dplyr::select(.,TAS:HL) %&amp;gt;%dplyr::mutate(I=(I1+I2+I3+I4)/4,V=(V1+V2+V3)/3,Kp=Keep,Rl=Release,H_L=HL) %&amp;gt;%dplyr::select(.,I,V,Erp,Frp,HSrp,Rrp,Srp,Eeb,Feb,HSeb,Reb,Seb,Kp,Rl,H_L) %&amp;gt;%round(.,3) %&amp;gt;% #decimal=3na.omit(.) #delete missing dataGGM &amp;lt;- estimateNetwork(net_prac, default=&amp;quot;EBICglasso&amp;quot;) #get named correlation matrix (EBICglasso)get_matrix &amp;lt;- function(raw_matrix){named_matrix &amp;lt;- matrix(raw_matrix,nrow=15,ncol=15)rownames(named_matrix) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;,&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;,&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)colnames(named_matrix) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;,&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;,&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)return(named_matrix)}df &amp;lt;- get_matrix(raw_matrix = GGM$graph)df#variables long namevar_name &amp;lt;- c(&amp;quot;Impulsive&amp;quot;,&amp;quot;Venturesome&amp;quot;,&amp;quot;Ethical Risk Perceptions&amp;quot;,&amp;quot;Financial Risk Perceptions&amp;quot;,&amp;quot;Health/Safety Risk Perceptions&amp;quot;,&amp;quot;Recreational Risk Perceptions&amp;quot;,&amp;quot;Social Risk Perceptions&amp;quot;,&amp;quot;Ethical Expected Benefits &amp;quot;,&amp;quot;Financial Expected Benefits &amp;quot;,&amp;quot;Health/Safety Expected Benefits &amp;quot;,&amp;quot;Recreational Expected Benefits &amp;quot;,&amp;quot;Social Expected Benefits &amp;quot;,&amp;quot;Keep&amp;quot;,&amp;quot;Release&amp;quot;,&amp;quot;Holt &amp;amp; Laury&amp;quot;)#create groupsget_group &amp;lt;- function(){IV=c(1,2)RP=c(3,4,5,6,7)EB=c(8,9,10,11,12)Y= c(13,14,15)names(IV) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;)names(RP) &amp;lt;- c(&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;)names(EB) &amp;lt;- c(&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;)names(Y) &amp;lt;- c(&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)group=list(IV,RP,EB,Y)names(group) &amp;lt;- c(&amp;quot;IV&amp;quot;,&amp;quot;RP&amp;quot;,&amp;quot;EB&amp;quot;,&amp;quot;Y&amp;quot;)return(group)}risk_group=get_group()risk_grouplibrary(&amp;#39;mgm&amp;#39;)#get pie(residual error)get_RE &amp;lt;- function(raw_data){p &amp;lt;- ncol(raw_data) #number of variablesfit_obj &amp;lt;- mgm(data = raw_data, type = rep(&amp;#39;g&amp;#39;, p), #&amp;quot;g&amp;quot; for Gaussian, &amp;quot;p&amp;quot; for Poisson, &amp;quot;c&amp;quot; for categorical.</description>
+    </item>
+    
+    <item>
+      <title>Trident Z</title>
+      <link>/post/2022-07-07-trident-z/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>/post/2022-07-07-trident-z/</guid>
+      <description>电脑清灰</description>
+    </item>
+    
+    <item>
+      <title>仿佛是火山</title>
+      <link>/post/2022-01-22-volcano/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>/post/2022-01-22-volcano/</guid>
+      <description>江边对岸的山装了灯 这年头，连山也是RGB的</description>
+    </item>
+    
+    <item>
+      <title>goden_dove</title>
+      <link>/post/2021-04-17-goden-dove/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>/post/2021-04-17-goden-dove/</guid>
+      <description>这张图每一个像素点都是黄金分鸽</description>
+    </item>
+    
+    <item>
       <title>Hello R Markdown</title>
       <link>/post/2020-12-01-r-rmarkdown/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
@@ -52,6 +91,18 @@ $$&lt;/p&gt;
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>night</title>
+      <link>/post/2020-09-01-night/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>/post/2020-09-01-night/</guid>
+      <description>20年的一天晚上
+应该是刚看完小妇人回家
+Emma的演技确实糟糕
+那时江对岸的山上还没灯，现在真的丑死了</description>
     </item>
     
     <item>

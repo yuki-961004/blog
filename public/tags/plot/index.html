@@ -234,7 +234,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;387&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;388&nbsp;words
   
   
     
@@ -248,7 +248,8 @@
     </p>
     <div class="post-entry">
         
-        ###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;)library(&#39;bruceR&#39;)#plot#install.packages(&#39;ggplot2&#39;)library(&#39;ggplot2&#39;)#color#install.packages(&#39;viridisLite&#39;)#install.packages(&#39;viridis&#39;)library(&#39;viridisLite&#39;)library(&#39;viridis&#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&#39;showtext&#39;)#install.packages(&#39;Cairo&#39;)#install.packages(&#39;sysfonts&#39;)#install.packages(&#39;showtextdb&#39;)library(&#39;sysfonts&#39;)library(&#39;showtextdb&#39;)library(&#39;showtext&#39;)library(&#39;Cairo&#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.
+        这里的图是通过代码跑出来的，不是贴图
+###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;)library(&#39;bruceR&#39;)#plot#install.packages(&#39;ggplot2&#39;)library(&#39;ggplot2&#39;)#color#install.packages(&#39;viridisLite&#39;)#install.packages(&#39;viridis&#39;)library(&#39;viridisLite&#39;)library(&#39;viridis&#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&#39;showtext&#39;)#install.packages(&#39;Cairo&#39;)#install.packages(&#39;sysfonts&#39;)#install.packages(&#39;showtextdb&#39;)library(&#39;sysfonts&#39;)library(&#39;showtextdb&#39;)library(&#39;showtext&#39;)library(&#39;Cairo&#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.
         <a href="/post/2022-09-14-plot/" class="post-read-more">[Read More]</a>
         
     </div>
@@ -261,6 +262,59 @@
         <a href="//tags/plot/">plot</a>&nbsp;
         
         <a href="//tags/example/">example</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="/post/2022-08-31-network-plot/">
+        <h2 class="post-title">Network Plot</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2022
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;635&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;YuKi
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        这里的图是贴图
+毕竟跑一次bootstrap就得5分钟
+library(&quot;qgraph&quot;)library(&#39;ggplot2&#39;)library(&quot;bootnet&quot;) library(&quot;dplyr&quot;)setwd(&quot;C:/Users/hmz19/Desktop/Mental Health/Network Plot/R_code&quot;)#import datanet_prac&lt;- bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\Network Plot\\R_code\\dat_cfa_p.csv&quot;) %&gt;%dplyr::select(.,TAS:HL) %&gt;%dplyr::mutate(I=(I1+I2+I3+I4)/4,V=(V1+V2+V3)/3,Kp=Keep,Rl=Release,H_L=HL) %&gt;%dplyr::select(.,I,V,Erp,Frp,HSrp,Rrp,Srp,Eeb,Feb,HSeb,Reb,Seb,Kp,Rl,H_L) %&gt;%round(.,3) %&gt;% #decimal=3na.omit(.) #delete missing dataGGM &lt;- estimateNetwork(net_prac, default=&quot;EBICglasso&quot;) #get named correlation matrix (EBICglasso)get_matrix &lt;- function(raw_matrix){named_matrix &lt;- matrix(raw_matrix,nrow=15,ncol=15)rownames(named_matrix) &lt;- c(&quot;I&quot;,&quot;V&quot;,&quot;Erp&quot;,&quot;Frp&quot;,&quot;HSrp&quot;,&quot;Rrp&quot;,&quot;Srp&quot;,&quot;Eeb&quot;,&quot;Feb&quot;,&quot;HSeb&quot;,&quot;Reb&quot;,&quot;Seb&quot;,&quot;Kp&quot;,&quot;Rl&quot;,&quot;H_L&quot;)colnames(named_matrix) &lt;- c(&quot;I&quot;,&quot;V&quot;,&quot;Erp&quot;,&quot;Frp&quot;,&quot;HSrp&quot;,&quot;Rrp&quot;,&quot;Srp&quot;,&quot;Eeb&quot;,&quot;Feb&quot;,&quot;HSeb&quot;,&quot;Reb&quot;,&quot;Seb&quot;,&quot;Kp&quot;,&quot;Rl&quot;,&quot;H_L&quot;)return(named_matrix)}df &lt;- get_matrix(raw_matrix = GGM$graph)df#variables long namevar_name &lt;- c(&quot;Impulsive&quot;,&quot;Venturesome&quot;,&quot;Ethical Risk Perceptions&quot;,&quot;Financial Risk Perceptions&quot;,&quot;Health/Safety Risk Perceptions&quot;,&quot;Recreational Risk Perceptions&quot;,&quot;Social Risk Perceptions&quot;,&quot;Ethical Expected Benefits &quot;,&quot;Financial Expected Benefits &quot;,&quot;Health/Safety Expected Benefits &quot;,&quot;Recreational Expected Benefits &quot;,&quot;Social Expected Benefits &quot;,&quot;Keep&quot;,&quot;Release&quot;,&quot;Holt &amp; Laury&quot;)#create groupsget_group &lt;- function(){IV=c(1,2)RP=c(3,4,5,6,7)EB=c(8,9,10,11,12)Y= c(13,14,15)names(IV) &lt;- c(&quot;I&quot;,&quot;V&quot;)names(RP) &lt;- c(&quot;Erp&quot;,&quot;Frp&quot;,&quot;HSrp&quot;,&quot;Rrp&quot;,&quot;Srp&quot;)names(EB) &lt;- c(&quot;Eeb&quot;,&quot;Feb&quot;,&quot;HSeb&quot;,&quot;Reb&quot;,&quot;Seb&quot;)names(Y) &lt;- c(&quot;Kp&quot;,&quot;Rl&quot;,&quot;H_L&quot;)group=list(IV,RP,EB,Y)names(group) &lt;- c(&quot;IV&quot;,&quot;RP&quot;,&quot;EB&quot;,&quot;Y&quot;)return(group)}risk_group=get_group()risk_grouplibrary(&#39;mgm&#39;)#get pie(residual error)get_RE &lt;- function(raw_data){p &lt;- ncol(raw_data) #number of variablesfit_obj &lt;- mgm(data = raw_data, type = rep(&#39;g&#39;, p), #&quot;g&quot; for Gaussian, &quot;p&quot; for Poisson, &quot;c&quot; for categorical.
+        <a href="/post/2022-08-31-network-plot/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+        <a href="//tags/code/">code</a>&nbsp;
+        
+        <a href="//tags/plot/">plot</a>&nbsp;
+        
+        <a href="//tags/r-markdown/">R Markdown</a>&nbsp;
         
     </div>
     
