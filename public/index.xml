@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hmz1969a@gmail.com (YuKi)</managingEditor>
     <webMaster>hmz1969a@gmail.com (YuKi)</webMaster>
-    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code joke</title>
+      <link>/post/2022-09-16-code-joke/</link>
+      <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>/post/2022-09-16-code-joke/</guid>
+      <description>哈哈哈</description>
+    </item>
+    
     <item>
       <title>matrixA_function</title>
       <link>/post/2022-09-14-plot/</link>
