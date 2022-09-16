@@ -14,7 +14,7 @@ tags:
 title: Big Image Sample
 ---
 
-### 我喜欢的姐姐们    
+### Samples    
 
 Winona [Instagram](https://www.instagram.com/winonaryderofficial/).   
 Emma [Instagram](https://www.instagram.com/emmawatson/).  

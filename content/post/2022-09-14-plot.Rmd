@@ -13,7 +13,7 @@ type: ''
 subtitle: ''
 image: ''
 ---
-```{r,echo=TRUE,warning=FALSE}
+```{r,echo=TRUE,warning=FALSE,results='hide',message=FALSE}
 ###############################library packages#############################
 #base
 #install.packages('tidyverse')

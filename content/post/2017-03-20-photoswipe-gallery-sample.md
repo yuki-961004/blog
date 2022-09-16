@@ -13,7 +13,8 @@ Beautiful Hugo adds a few custom shortcodes created by [Li-Wen Yip](https://www.
   {{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
   {{< figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" >}}
   {{< figure thumb="-thumb" link="/img/triangle.jpg" caption="Triangle" alt="This is a long comment about a triangle" >}}
-{{< /gallery >}}
+  {{< figure thumb="-small" link="/img/jc1.jpg" caption="Jennifer Connelly" alt="Jennifer Connelly......." >}}
+{{< /gallery >}} 
 
 <!--more-->
 ## Example
