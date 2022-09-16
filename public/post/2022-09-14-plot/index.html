@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>matrixA_function - YuKi&#39;s Blog</title>
-  <meta name="description" content="###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;)## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──## ✔ ggplot2 3.3.6 ✔ purrr 0.3.4 ## ✔ tibble 3.1.8 ✔ dplyr 1.0.10## ✔ tidyr 1.2.1 ✔ stringr 1.4.1 ## ✔ readr 2.1.2 ✔ forcats 0.5.2 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──## ✖ dplyr::filter() masks stats::filter()## ✖ dplyr::lag() masks stats::lag()library(&#39;bruceR&#39;)## ## bruceR (version 0.8.9)## BRoadly Useful Convenient and Efficient R functions## ## Packages also loaded:## √ dplyr √ emmeans √ ggplot2## √ tidyr √ effectsize √ ggtext## √ stringr √ performance √ cowplot## √ forcats √ lmerTest √ see## √ data.">
+  <meta name="description" content="###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;)library(&#39;bruceR&#39;)#plot#install.packages(&#39;ggplot2&#39;)library(&#39;ggplot2&#39;)#color#install.packages(&#39;viridisLite&#39;)#install.packages(&#39;viridis&#39;)library(&#39;viridisLite&#39;)library(&#39;viridis&#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&#39;showtext&#39;)#install.packages(&#39;Cairo&#39;)#install.packages(&#39;sysfonts&#39;)#install.packages(&#39;showtextdb&#39;)library(&#39;sysfonts&#39;)library(&#39;showtextdb&#39;)library(&#39;showtext&#39;)library(&#39;Cairo&#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.">
   <meta name="author" content="YuKi"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "YuKi"
   },
   "headline": "matrixA_function",
-  "description" : "###############################library packages#############################\r#base\r#install.packages(\u0026#39;tidyverse\u0026#39;)\r#install.packages(\u0026#39;bruceR\u0026#39;)\rlibrary(\u0026#39;tidyverse\u0026#39;)\r## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\r## ✔ ggplot2 3.3.6 ✔ purrr 0.3.4 ## ✔ tibble 3.1.8 ✔ dplyr 1.0.10\r## ✔ tidyr 1.2.1 ✔ stringr 1.4.1 ## ✔ readr 2.1.2 ✔ forcats 0.5.2 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\r## ✖ dplyr::filter() masks stats::filter()\r## ✖ dplyr::lag() masks stats::lag()\rlibrary(\u0026#39;bruceR\u0026#39;)\r## ## bruceR (version 0.8.9)\r## BRoadly Useful Convenient and Efficient R functions\r## ## Packages also loaded:\r## √ dplyr √ emmeans √ ggplot2\r## √ tidyr √ effectsize √ ggtext\r## √ stringr √ performance √ cowplot\r## √ forcats √ lmerTest √ see\r## √ data.",
+  "description" : "###############################library packages#############################\r#base\r#install.packages(\u0026#39;tidyverse\u0026#39;)\r#install.packages(\u0026#39;bruceR\u0026#39;)\rlibrary(\u0026#39;tidyverse\u0026#39;)\rlibrary(\u0026#39;bruceR\u0026#39;)\r#plot\r#install.packages(\u0026#39;ggplot2\u0026#39;)\rlibrary(\u0026#39;ggplot2\u0026#39;)\r#color\r#install.packages(\u0026#39;viridisLite\u0026#39;)\r#install.packages(\u0026#39;viridis\u0026#39;)\rlibrary(\u0026#39;viridisLite\u0026#39;)\rlibrary(\u0026#39;viridis\u0026#39;)\r#if you use mac OS, you should change the path of font file\r#default: simsun.ttc (songti)\r#Figure1.pdf display Chinese\r#install.packages(\u0026#39;showtext\u0026#39;)\r#install.packages(\u0026#39;Cairo\u0026#39;)\r#install.packages(\u0026#39;sysfonts\u0026#39;)\r#install.packages(\u0026#39;showtextdb\u0026#39;)\rlibrary(\u0026#39;sysfonts\u0026#39;)\rlibrary(\u0026#39;showtextdb\u0026#39;)\rlibrary(\u0026#39;showtext\u0026#39;)\rlibrary(\u0026#39;Cairo\u0026#39;)\r#################################edit here##################################\r#set working path\r#open matrix\rrawdata = bruceR::import(\u0026quot;C:\\\\Users\\\\hmz19\\\\Desktop\\\\Mental Health\\\\task\\\\task11\\\\data\\\\depression_matrix_a_0.xlsx\u0026quot;) #Load data for plot (difference between specific and compound symptoms)\r#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.",
   "inLanguage" : "en",
-  "wordCount":  582 ,
+  "wordCount":  387 ,
   "datePublished" : "2022-09-15T00:00:00",
   "dateModified" : "2022-09-15T00:00:00",
   "image" : "\/img\/black_rose.png",
@@ -79,14 +79,14 @@
 </script>
 
 <meta property="og:title" content="matrixA_function" />
-<meta property="og:description" content="###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;)## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──## ✔ ggplot2 3.3.6 ✔ purrr 0.3.4 ## ✔ tibble 3.1.8 ✔ dplyr 1.0.10## ✔ tidyr 1.2.1 ✔ stringr 1.4.1 ## ✔ readr 2.1.2 ✔ forcats 0.5.2 ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──## ✖ dplyr::filter() masks stats::filter()## ✖ dplyr::lag() masks stats::lag()library(&#39;bruceR&#39;)## ## bruceR (version 0.8.9)## BRoadly Useful Convenient and Efficient R functions## ## Packages also loaded:## √ dplyr √ emmeans √ ggplot2## √ tidyr √ effectsize √ ggtext## √ stringr √ performance √ cowplot## √ forcats √ lmerTest √ see## √ data.">
+<meta property="og:description" content="###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;)library(&#39;bruceR&#39;)#plot#install.packages(&#39;ggplot2&#39;)library(&#39;ggplot2&#39;)#color#install.packages(&#39;viridisLite&#39;)#install.packages(&#39;viridis&#39;)library(&#39;viridisLite&#39;)library(&#39;viridis&#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&#39;showtext&#39;)#install.packages(&#39;Cairo&#39;)#install.packages(&#39;sysfonts&#39;)#install.packages(&#39;showtextdb&#39;)library(&#39;sysfonts&#39;)library(&#39;showtextdb&#39;)library(&#39;showtext&#39;)library(&#39;Cairo&#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.">
 <meta property="og:image" content="/img/black_rose.png" />
 <meta property="og:url" content="/post/2022-09-14-plot/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="YuKi&#39;s Blog" />
 
   <meta name="twitter:title" content="matrixA_function" />
-  <meta name="twitter:description" content="###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;)## ── …">
+  <meta name="twitter:description" content="###############################library packages##############################base#install.packages(&#39;tidyverse&#39;)#install.packages(&#39;bruceR&#39;)library(&#39;tidyverse&#39;) …">
   <meta name="twitter:image" content="/img/black_rose.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@YuKi64810517" />
@@ -255,10 +255,10 @@
   <i class="fas fa-calendar"></i>&nbsp;Posted on September 15, 2022
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;582&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;387&nbsp;words
   
   
     
@@ -291,42 +291,10 @@
 #base
 #install.packages(&#39;tidyverse&#39;)
 #install.packages(&#39;bruceR&#39;)
-library(&#39;tidyverse&#39;)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-## ✔ ggplot2 3.3.6      ✔ purrr   0.3.4 
-## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
-## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
-## ✔ readr   2.1.2      ✔ forcats 0.5.2 
-## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(&#39;bruceR&#39;)</code></pre>
-<pre><code>## 
-## bruceR (version 0.8.9)
-## BRoadly Useful Convenient and Efficient R functions
-## 
-## Packages also loaded:
-## √ dplyr      √ emmeans       √ ggplot2
-## √ tidyr      √ effectsize    √ ggtext
-## √ stringr    √ performance   √ cowplot
-## √ forcats    √ lmerTest      √ see
-## √ data.table
-## 
-## Main functions of `bruceR`:
-## cc()             Describe()  TTEST()
-## add()            Freq()      MANOVA()
-## .mean()          Corr()      EMMEANS()
-## set.wd()         Alpha()     PROCESS()
-## import()         EFA()       model_summary()
-## print_table()    CFA()       lavaan_summary()
-## 
-## https://psychbruce.github.io/bruceR/
-## 
-## These R packages are dependencies of `bruceR` but not installed:
-## pacman, lmtest, vars, phia, BayesFactor, GGally, GPArotation
-## ***** Please Install All Dependencies *****
-## install.packages(&quot;bruceR&quot;, dep=TRUE)</code></pre>
-<pre class="r"><code>#plot
+library(&#39;tidyverse&#39;)
+library(&#39;bruceR&#39;)
+
+#plot
 #install.packages(&#39;ggplot2&#39;)
 library(&#39;ggplot2&#39;)
 
@@ -353,9 +321,8 @@ library(&#39;Cairo&#39;)
 #set working path
 
 #open matrix
-rawdata = bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&quot;)  #Load data for plot (difference between specific and compound symptoms)</code></pre>
-<pre><code>## √ Successfully imported: 94 obs. of 27 variables</code></pre>
-<pre class="r"><code>  #the structure of matrixA: 
+rawdata = bruceR::import(&quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&quot;)  #Load data for plot (difference between specific and compound symptoms)
+  #the structure of matrixA: 
   #first row: scale_name_1, scale_name_2, scale_name_3,...,scale_name_n,S_name
   #...
   #each row represents a symptom
@@ -448,8 +415,6 @@ return(a)
 matrixA_plot(dataplot = rawdata,
              n_scal = n_scales,
              n_symp = n_symptoms)  </code></pre>
-<pre><code>## &#39;showtext.auto()&#39; is now renamed to &#39;showtext_auto()&#39;
-## The old version still works, but consider using the new function in future code</code></pre>
 <p><img src="/post/2022-09-14-plot_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 
 
