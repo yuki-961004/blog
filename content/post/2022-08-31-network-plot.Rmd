@@ -3,11 +3,11 @@ title: Network Plot
 author: ''
 date: '2022-08-31'
 slug: []
-categories: []
+categories:
+  - R_code
 tags:
   - code
   - plot
-  - R Markdown
 type: ''
 subtitle: ''
 image: ''

@@ -1,9 +1,10 @@
 ---
 date: "2017-03-20"
 subtitle: Making a Gallery
+categories: ["images"]
 tags:
 - example
-- photoswipe
+- images
 title: Photoswipe Gallery Sample
 ---
 

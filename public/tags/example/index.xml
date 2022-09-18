@@ -32,19 +32,6 @@ bigimg: - {src: &amp;#34;/img/triangle.jpg&amp;#34;, desc: &amp;#34;Triangle&amp
     </item>
     
     <item>
-      <title>Math Sample</title>
-      <link>https://yukis-blog.netlify.app/post/2017-03-05-math-sample/</link>
-      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2017-03-05-math-sample/</guid>
-      <description>&lt;h3 id=&#34;my-favorite-function&#34;&gt;My Favorite Function&lt;/h3&gt;
-&lt;p&gt;$$
-E=mc^{2}
-$$&lt;/p&gt;
-&lt;p&gt;Additional details can be found on &lt;a href=&#34;https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence&#34;&gt;Wiki&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Photoswipe Gallery Sample</title>
       <link>https://yukis-blog.netlify.app/post/2017-03-20-photoswipe-gallery-sample/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
@@ -111,27 +98,6 @@ $$&lt;/p&gt;
 
 
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Code Sample</title>
-      <link>https://yukis-blog.netlify.app/post/2016-03-08-code-sample/</link>
-      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2016-03-08-code-sample/</guid>
-      <description>&lt;p&gt;The following are two code samples using syntax highlighting.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Test markdown</title>
-      <link>https://yukis-blog.netlify.app/post/2015-02-20-test-markdown/</link>
-      <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2015-02-20-test-markdown/</guid>
-      <description>You can write regular markdown here and Hugo will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it&amp;rsquo;ll teach you how to transform regular text into bold/italics/headings/tables/etc.
-Here is some bold text
-Here is a secondary heading Here&amp;rsquo;s a useless table:
-Number Next number Previous number Five Six Four Ten Eleven Nine Seven Eight Six Two Three One How about a yummy crepe?</description>
     </item>
     
   </channel>

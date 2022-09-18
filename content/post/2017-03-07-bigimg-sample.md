@@ -8,17 +8,18 @@ bigimg:
   src: /img/jc1.jpg
 date: "2022-09-14"
 subtitle: Using Multiple Images
+categories: ["images"]
 tags:
 - example
-- bigimg
+- images
 title: Big Image Sample
 ---
 
 ### Samples    
 
-Winona [Instagram](https://www.instagram.com/winonaryderofficial/).   
-Emma [Instagram](https://www.instagram.com/emmawatson/).  
-Jennifer[Instagram](https://www.instagram.com/jenniferconnelly_/).  
+Winona    [Instagram](https://www.instagram.com/winonaryderofficial/).   
+Emma    [Instagram](https://www.instagram.com/emmawatson/).  
+Jennifer    [Instagram](https://www.instagram.com/jenniferconnelly_/).  
 
 
 使用以下命令，可以替换顶部大图

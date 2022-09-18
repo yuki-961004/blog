@@ -1,11 +1,11 @@
 ---
-title: goden_dove
+title: Goden_dove
 author: ''
 date: '2021-04-17'
 slug: []
-categories: []
+categories: ["images"]
 tags:
-  - photoswipe
+  - images
 type: ''
 subtitle: ''
 image: ''

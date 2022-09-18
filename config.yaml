@@ -60,28 +60,14 @@ menu:
     - name: Blog
       url: ''
       weight: 1
-    - identifier: samples
-      name: Samples
+    - identifier: categories
+      name: Categories
+      pageref: categories/
       weight: 2
-    - name: Big Image Sample
-      parent: samples
-      url: post/2017-03-07-bigimg-sample
-      weight: 1
-    - name: Math Sample
-      parent: samples
-      url: post/2017-03-05-math-sample
-      weight: 2
-    - name: Code Sample
-      parent: samples
-      url: post/2016-03-08-code-sample
-      weight: 3
-    - name: Plot Sample
-      parent: samples
-      url: post/2022-09-14-plot
-      weight: 4
     - name: About
       url: page/about/
       weight: 3   
     - name: Tags
       url: tags
       weight: 4
+
