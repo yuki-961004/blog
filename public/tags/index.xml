@@ -9,11 +9,11 @@
     <webMaster>hmz1969a@gmail.com (YuKi)</webMaster>
     <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukis-blog.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>joke</title>
-      <link>https://yukis-blog.netlify.app/tags/joke/</link>
+      <title>images</title>
+      <link>https://yukis-blog.netlify.app/tags/images/</link>
       <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/tags/joke/</guid>
+      <guid>https://yukis-blog.netlify.app/tags/images/</guid>
       <description></description>
     </item>
     
@@ -27,15 +27,6 @@
     </item>
     
     <item>
-      <title>example</title>
-      <link>https://yukis-blog.netlify.app/tags/example/</link>
-      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/tags/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>plot</title>
       <link>https://yukis-blog.netlify.app/tags/plot/</link>
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
@@ -45,29 +36,11 @@
     </item>
     
     <item>
-      <title>bigimg</title>
-      <link>https://yukis-blog.netlify.app/tags/bigimg/</link>
+      <title>example</title>
+      <link>https://yukis-blog.netlify.app/tags/example/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/tags/bigimg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>https://yukis-blog.netlify.app/tags/r-markdown/</link>
-      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>photoswipe</title>
-      <link>https://yukis-blog.netlify.app/tags/photoswipe/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/tags/photoswipe/</guid>
+      <guid>https://yukis-blog.netlify.app/tags/example/</guid>
       <description></description>
     </item>
     

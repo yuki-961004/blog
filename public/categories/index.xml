@@ -7,22 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hmz1969a@gmail.com (YuKi)</managingEditor>
     <webMaster>hmz1969a@gmail.com (YuKi)</webMaster>
-    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukis-blog.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukis-blog.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>images</title>
+      <link>https://yukis-blog.netlify.app/categories/images/</link>
+      <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
+      <author>hmz1969a@gmail.com (YuKi)</author>
+      <guid>https://yukis-blog.netlify.app/categories/images/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>R_code</title>
       <link>https://yukis-blog.netlify.app/categories/r_code/</link>
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
       <guid>https://yukis-blog.netlify.app/categories/r_code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>images</title>
-      <link>https://yukis-blog.netlify.app/categories/images/</link>
-      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/categories/images/</guid>
       <description></description>
     </item>
     

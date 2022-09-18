@@ -8,7 +8,6 @@ categories:
 tags:
   - code
   - plot
-  - example
 type: ''
 subtitle: ''
 image: ''

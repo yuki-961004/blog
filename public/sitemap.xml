@@ -5,10 +5,16 @@
     <loc>https://yukis-blog.netlify.app/</loc>
     <lastmod>2022-09-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://yukis-blog.netlify.app/categories/</loc>
+    <lastmod>2022-09-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yukis-blog.netlify.app/post/2022-09-16-code-joke/</loc>
     <lastmod>2022-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yukis-blog.netlify.app/tags/joke/</loc>
+    <loc>https://yukis-blog.netlify.app/tags/images/</loc>
+    <lastmod>2022-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yukis-blog.netlify.app/categories/images/</loc>
     <lastmod>2022-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yukis-blog.netlify.app/post/</loc>
@@ -17,13 +23,7 @@
     <loc>https://yukis-blog.netlify.app/tags/</loc>
     <lastmod>2022-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yukis-blog.netlify.app/categories/</loc>
-    <lastmod>2022-09-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yukis-blog.netlify.app/tags/code/</loc>
-    <lastmod>2022-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yukis-blog.netlify.app/tags/example/</loc>
     <lastmod>2022-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yukis-blog.netlify.app/post/2022-09-14-plot/</loc>
@@ -38,25 +38,16 @@
     <loc>https://yukis-blog.netlify.app/post/2017-03-07-bigimg-sample/</loc>
     <lastmod>2022-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yukis-blog.netlify.app/tags/bigimg/</loc>
-    <lastmod>2022-09-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yukis-blog.netlify.app/categories/images/</loc>
+    <loc>https://yukis-blog.netlify.app/tags/example/</loc>
     <lastmod>2022-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yukis-blog.netlify.app/post/2022-08-31-network-plot/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yukis-blog.netlify.app/tags/r-markdown/</loc>
-    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yukis-blog.netlify.app/tags/photoswipe/</loc>
-    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yukis-blog.netlify.app/post/2022-07-07-trident-z/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yukis-blog.netlify.app/post/2022-01-22-volcano/</loc>
+    <loc>https://yukis-blog.netlify.app/post/2022-01-22-night/</loc>
     <lastmod>2022-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yukis-blog.netlify.app/post/2021-04-17-goden-dove/</loc>

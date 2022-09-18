@@ -8,7 +8,6 @@ categories:
 tags:
   - code
   - plot
-  - R Markdown
 type: ''
 subtitle: ''
 image: ''

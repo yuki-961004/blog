@@ -35,7 +35,7 @@
       <guid>https://yukis-blog.netlify.app/post/2017-03-07-bigimg-sample/</guid>
       <description>Samples Winona Instagram.
 Emma Instagram.
-JenniferInstagram.
+Jennifer Instagram.
 使用以下命令，可以替换顶部大图
 bigimg: - {src: &amp;#34;/img/triangle.jpg&amp;#34;, desc: &amp;#34;Triangle&amp;#34;} - {src: &amp;#34;/img/sphere.jpg&amp;#34;, desc: &amp;#34;Sphere&amp;#34;} - {src: &amp;#34;/img/hexagon.jpg&amp;#34;, desc: &amp;#34;Hexagon&amp;#34;} </description>
     </item>
@@ -62,10 +62,10 @@ library(&amp;quot;qgraph&amp;quot;)library(&amp;#39;ggplot2&amp;#39;)library(&
     
     <item>
       <title>Night</title>
-      <link>https://yukis-blog.netlify.app/post/2022-01-22-volcano/</link>
+      <link>https://yukis-blog.netlify.app/post/2022-01-22-night/</link>
       <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
       <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2022-01-22-volcano/</guid>
+      <guid>https://yukis-blog.netlify.app/post/2022-01-22-night/</guid>
       <description>江边对岸的山装了灯 这年头，连山也是RGB的
 20年的一天晚上
 应该是刚看完小妇人回家
