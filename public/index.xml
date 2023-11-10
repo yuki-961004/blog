@@ -5,83 +5,35 @@
     <link>https://yukis-blog.netlify.app/</link>
     <description>Recent content on YuKi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>hmz1969a@gmail.com (YuKi)</managingEditor>
-    <webMaster>hmz1969a@gmail.com (YuKi)</webMaster>
-    <lastBuildDate>Tue, 20 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukis-blog.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yukis-blog.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dairy</title>
-      <link>https://yukis-blog.netlify.app/post/2022-09-20-dairy/</link>
-      <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2022-09-20-dairy/</guid>
-      <description>今天学会了如何给blog换颜色
-css文件真的很难，完全不像content里的东西——整理文件=做网页 换个主题等于换个语言了，
-universal主题里的很多东西，明明改了文件，却不见它网页里改变
-心心念念的键盘终于发货了，按照他的发货速度，这键盘估计全国不到100把吧
-网上买眼镜真的很折腾</description>
-    </item>
-    
-    <item>
-      <title>Code Joke</title>
-      <link>https://yukis-blog.netlify.app/post/2022-09-16-code-joke/</link>
-      <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2022-09-16-code-joke/</guid>
-      <description>哈哈哈</description>
-    </item>
-    
-    <item>
-      <title>MatrixA_Function</title>
-      <link>https://yukis-blog.netlify.app/post/2022-09-14-matrixa_function/</link>
-      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2022-09-14-matrixa_function/</guid>
-      <description>这里的图是通过代码跑出来的，不是贴图
-###############################library packages##############################base#install.packages(&amp;#39;tidyverse&amp;#39;)#install.packages(&amp;#39;bruceR&amp;#39;)library(&amp;#39;tidyverse&amp;#39;)library(&amp;#39;bruceR&amp;#39;)#plot#install.packages(&amp;#39;ggplot2&amp;#39;)library(&amp;#39;ggplot2&amp;#39;)#color#install.packages(&amp;#39;viridisLite&amp;#39;)#install.packages(&amp;#39;viridis&amp;#39;)library(&amp;#39;viridisLite&amp;#39;)library(&amp;#39;viridis&amp;#39;)#if you use mac OS, you should change the path of font file#default: simsun.ttc (songti)#Figure1.pdf display Chinese#install.packages(&amp;#39;showtext&amp;#39;)#install.packages(&amp;#39;Cairo&amp;#39;)#install.packages(&amp;#39;sysfonts&amp;#39;)#install.packages(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;sysfonts&amp;#39;)library(&amp;#39;showtextdb&amp;#39;)library(&amp;#39;showtext&amp;#39;)library(&amp;#39;Cairo&amp;#39;)#################################edit here###################################set working path#open matrixrawdata = bruceR::import(&amp;quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\task\\task11\\data\\depression_matrix_a_0.xlsx&amp;quot;) #Load data for plot (difference between specific and compound symptoms)#the structure of matrixA: #first row: scale_name_1, scale_name_2, scale_name_3,.</description>
-    </item>
-    
-    <item>
-      <title>Big Image Sample</title>
-      <link>https://yukis-blog.netlify.app/post/2017-03-07-bigimg-sample/</link>
-      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2017-03-07-bigimg-sample/</guid>
-      <description>Samples Winona Instagram.
-Emma Instagram.
-Jennifer Instagram.
-使用以下命令，可以替换顶部大图
-bigimg: - {src: &amp;#34;/img/triangle.jpg&amp;#34;, desc: &amp;#34;Triangle&amp;#34;} - {src: &amp;#34;/img/sphere.jpg&amp;#34;, desc: &amp;#34;Sphere&amp;#34;} - {src: &amp;#34;/img/hexagon.jpg&amp;#34;, desc: &amp;#34;Hexagon&amp;#34;} </description>
-    </item>
-    
-    <item>
-      <title>Network Plot</title>
-      <link>https://yukis-blog.netlify.app/post/2022-08-31-network-plot/</link>
-      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/post/2022-08-31-network-plot/</guid>
-      <description>这里的图是贴图
-毕竟跑一次bootstrap就得5分钟
-library(&amp;quot;qgraph&amp;quot;)library(&amp;#39;ggplot2&amp;#39;)library(&amp;quot;bootnet&amp;quot;) library(&amp;quot;dplyr&amp;quot;)setwd(&amp;quot;C:/Users/hmz19/Desktop/Mental Health/Network Plot/R_code&amp;quot;)#import datanet_prac&amp;lt;- bruceR::import(&amp;quot;C:\\Users\\hmz19\\Desktop\\Mental Health\\Network Plot\\R_code\\dat_cfa_p.csv&amp;quot;) %&amp;gt;%dplyr::select(.,TAS:HL) %&amp;gt;%dplyr::mutate(I=(I1+I2+I3+I4)/4,V=(V1+V2+V3)/3,Kp=Keep,Rl=Release,H_L=HL) %&amp;gt;%dplyr::select(.,I,V,Erp,Frp,HSrp,Rrp,Srp,Eeb,Feb,HSeb,Reb,Seb,Kp,Rl,H_L) %&amp;gt;%round(.,3) %&amp;gt;% #decimal=3na.omit(.) #delete missing dataGGM &amp;lt;- estimateNetwork(net_prac, default=&amp;quot;EBICglasso&amp;quot;) #get named correlation matrix (EBICglasso)get_matrix &amp;lt;- function(raw_matrix){named_matrix &amp;lt;- matrix(raw_matrix,nrow=15,ncol=15)rownames(named_matrix) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;,&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;,&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)colnames(named_matrix) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;,&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;,&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;,&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)return(named_matrix)}df &amp;lt;- get_matrix(raw_matrix = GGM$graph)df#variables long namevar_name &amp;lt;- c(&amp;quot;Impulsive&amp;quot;,&amp;quot;Venturesome&amp;quot;,&amp;quot;Ethical Risk Perceptions&amp;quot;,&amp;quot;Financial Risk Perceptions&amp;quot;,&amp;quot;Health/Safety Risk Perceptions&amp;quot;,&amp;quot;Recreational Risk Perceptions&amp;quot;,&amp;quot;Social Risk Perceptions&amp;quot;,&amp;quot;Ethical Expected Benefits &amp;quot;,&amp;quot;Financial Expected Benefits &amp;quot;,&amp;quot;Health/Safety Expected Benefits &amp;quot;,&amp;quot;Recreational Expected Benefits &amp;quot;,&amp;quot;Social Expected Benefits &amp;quot;,&amp;quot;Keep&amp;quot;,&amp;quot;Release&amp;quot;,&amp;quot;Holt &amp;amp; Laury&amp;quot;)#create groupsget_group &amp;lt;- function(){IV=c(1,2)RP=c(3,4,5,6,7)EB=c(8,9,10,11,12)Y= c(13,14,15)names(IV) &amp;lt;- c(&amp;quot;I&amp;quot;,&amp;quot;V&amp;quot;)names(RP) &amp;lt;- c(&amp;quot;Erp&amp;quot;,&amp;quot;Frp&amp;quot;,&amp;quot;HSrp&amp;quot;,&amp;quot;Rrp&amp;quot;,&amp;quot;Srp&amp;quot;)names(EB) &amp;lt;- c(&amp;quot;Eeb&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;HSeb&amp;quot;,&amp;quot;Reb&amp;quot;,&amp;quot;Seb&amp;quot;)names(Y) &amp;lt;- c(&amp;quot;Kp&amp;quot;,&amp;quot;Rl&amp;quot;,&amp;quot;H_L&amp;quot;)group=list(IV,RP,EB,Y)names(group) &amp;lt;- c(&amp;quot;IV&amp;quot;,&amp;quot;RP&amp;quot;,&amp;quot;EB&amp;quot;,&amp;quot;Y&amp;quot;)return(group)}risk_group=get_group()risk_grouplibrary(&amp;#39;mgm&amp;#39;)#get pie(residual error)get_RE &amp;lt;- function(raw_data){p &amp;lt;- ncol(raw_data) #number of variablesfit_obj &amp;lt;- mgm(data = raw_data, type = rep(&amp;#39;g&amp;#39;, p), #&amp;quot;g&amp;quot; for Gaussian, &amp;quot;p&amp;quot; for Poisson, &amp;quot;c&amp;quot; for categorical.</description>
+      <title>Easter egg</title>
+      <link>https://yukis-blog.netlify.app/post/egg/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yukis-blog.netlify.app/post/egg/</guid>
+      <description>Congratulations!
+You&amp;rsquo;ve found an Easter egg.
+&amp;ldquo;The whole website was created by yuki~&amp;rdquo;
+Now that you&amp;rsquo;ve discovered this place, why not come and follow my Twitter and GitHub?</description>
     </item>
     
     <item>
       <title>Goden_dove</title>
       <link>https://yukis-blog.netlify.app/post/2021-04-17-goden-dove/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
+      
       <guid>https://yukis-blog.netlify.app/post/2021-04-17-goden-dove/</guid>
-      <description>这张图每一个像素点都是黄金分鸽</description>
+      <description></description>
     </item>
     
     <item>
-      <title>About me</title>
-      <link>https://yukis-blog.netlify.app/page/about/</link>
+      <title></title>
+      <link>https://yukis-blog.netlify.app/page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>hmz1969a@gmail.com (YuKi)</author>
-      <guid>https://yukis-blog.netlify.app/page/about/</guid>
-      <description>这里是yuki，
-还没想好怎么介绍自己
-底下的链接都是我的真实账号 你放心，都锁死了</description>
+      
+      <guid>https://yukis-blog.netlify.app/page/</guid>
+      <description>This is yuki</description>
     </item>
     
   </channel>
